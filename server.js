@@ -2,9 +2,7 @@ var express = require('express'); // Express web server framework
 var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
-
 var config = require('./config.json');
-
 var client_id = config.CLIENT_ID; // Your client id
 var client_secret = config.CLIENT_SECRET; // Your secret
 var redirect_uri = config.REDIRECT_URI; // Your redirect uri
