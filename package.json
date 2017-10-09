@@ -1,0 +1,25 @@
+{
+  "name": "group-playlist",
+  "version": "1.0.0",
+  "description": "An application that can be used to create a Spotify playlist based on the length of your run.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryancanavan/Group-Playlist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryancanavan/Group-Playlist/issues"
+  },
+  "homepage": "https://github.com/ryancanavan/Group-Playlist#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.1",
+    "request": "^2.83.0"
+  }
+}
