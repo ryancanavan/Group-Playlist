@@ -31,27 +31,30 @@ class Body extends Component {
 	}
 
 	loggedInCheck(params) {
-        if(!this.isEmpty(params)){
+        if(!isEmpty(params)){
             this.setState({
                 loggedIn: true,
             });
         }
 	}
 
-	isEmpty(obj) {
-		for(var prop in obj) {
-			if(obj.hasOwnProperty(prop))
-				return false;
-		}
-		return JSON.stringify(obj) === JSON.stringify({});
-	}
-
 	render() {
-		if(this.state.params.error){
+		if(this.state.params.error) {
 			return <Login error={this.state.params.error} />
-		}        
-		return <Login error="" />;
+		} else if(this.state.loggedIn) {
+			return "You are logged in!";
+		} else { 
+			return <Login error="" />;
+		}
 	}
+}
+
+function isEmpty(obj) {
+	for(var prop in obj) {
+		if(obj.hasOwnProperty(prop))
+			return false;
+	}
+	return JSON.stringify(obj) === JSON.stringify({});
 }
 
 export default Body;
