@@ -1,5 +1,9 @@
 import React from 'react';
-import spotifyLogo from '../Spotify_Icon_Green.png';
+
+import './styles/Header.css';
+import spotifyLogo from '../res/Spotify_Icon_Green.png';
+
+console.log(spotifyLogo);
 
 function Header() {
 	return (

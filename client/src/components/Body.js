@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Login from './Login';
 
-class Body extends Component {
-	constructor() {
-		super();
-		this.state = {
-			loggedIn: false,
-			params: null,
-		};
+import Login from './Login';
+import './styles/Body.css';
+
+export default class Body extends Component {
+	state = { 
+		loggedIn: false,
+		params: null
 	}
 
 	componentWillMount() {
@@ -44,7 +43,7 @@ class Body extends Component {
 		} else if(this.state.loggedIn) {
 			return "You are logged in!";
 		} else { 
-			return <Login error="" />;
+			return <Login />;
 		}
 	}
 }
@@ -56,5 +55,3 @@ function isEmpty(obj) {
 	}
 	return JSON.stringify(obj) === JSON.stringify({});
 }
-
-export default Body;
