@@ -3,8 +3,6 @@ import React from 'react';
 import './styles/Header.css';
 import spotifyLogo from '../res/Spotify_Icon_Green.png';
 
-console.log(spotifyLogo);
-
 function Header() {
 	return (
 		<div className="Header">
